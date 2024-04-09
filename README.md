@@ -79,18 +79,18 @@ set-executionpolicy unrestricted
 ### 4. Simulation of muscle cell ion channels
 Open the PowerShell and activate the PyNeuroML environment.
 For example, if you created the environment following these instructions, using:
-"""
+  ```
 conda activate nml
-"""
+  ```
 To create and run the LEMS simulations, there is a script for each of the NeuroML2 ion channel models. For example, to create and run a simulation to analyse the fast potassium channel, the `muscle_model\NeuroML2` subdirectory and run the command:
-"""
+  ```
     .\analyse_k_fast.sh
-"""
+  ```
 
 In this directory, you can run:
-"""
+  ```
     pynml LEMS_NeuronMuscle.xml
-""" 
+  ``` 
 
 ### 5 Simulation of muscle cell ion channels on a MacBook
 
