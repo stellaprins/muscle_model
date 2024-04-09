@@ -92,7 +92,7 @@ In this directory, you can run:
     pynml LEMS_NeuronMuscle.xml
   ``` 
 
-### 5 Simulation of muscle cell ion channels on a MacBook
+### 5 Simulation of muscle cell ion channels (Mac)
 
 The muscle model contains NeuroML2 descriptions of the ion channels in the muscle cell. To create and run LEMS simulations of these ion channels, first install the dependencies as follows:
 
