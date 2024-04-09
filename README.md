@@ -56,8 +56,43 @@ See issue: https://github.com/openworm/OpenWorm/issues/169 for the latest.
 
 See also http://www.opensourcebrain.org/projects/muscle_model/wiki.
 
+### 3. Prerequisites (Windows)
+#### Python
+If you don't have Python yet, download Python here https://www.python.org/downloads
+#### JAVA
+Make sure you have installed JAVA. You can find JAVA for Windows here https://www.java.com/en/download
+#### Environment
+Use a package manager, such as Anaconda to create a virtual environment. 
 
-#### 2.1 Simulation of muscle cell ion channels
+For example by opening the Anaconda command prompt and typing the following:
+  ```
+conda create --name nml
+conda activate nml
+conda install pip
+pip install pyneuroml
+  ```
+#### Enable Conda environment activation from the PowerShell
+To activate conda environments directly trough the PowerShell first enable unrestricted PowerShell script execution by opening the PowerShell with 'Run as Administrator' and set your Path, using 'cd', to the conda Script directory (%USERPROFILE%\anaconda3\Scripts).
+  ```
+set-executionpolicy unrestricted
+  ```
+### 4. Simulation of muscle cell ion channels
+Open the PowerShell and activate the PyNeuroML environment.
+For example, if you created the environment following these instructions, using:
+"""
+conda activate nml
+"""
+To create and run the LEMS simulations, there is a script for each of the NeuroML2 ion channel models. For example, to create and run a simulation to analyse the fast potassium channel, the `muscle_model\NeuroML2` subdirectory and run the command:
+"""
+    .\analyse_k_fast.sh
+"""
+
+In this directory, you can run:
+"""
+    pynml LEMS_NeuronMuscle.xml
+""" 
+
+### 5 Simulation of muscle cell ion channels on a MacBook
 
 The muscle model contains NeuroML2 descriptions of the ion channels in the muscle cell. To create and run LEMS simulations of these ion channels, first install the dependencies as follows:
 
